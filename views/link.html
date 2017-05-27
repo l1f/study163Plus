@@ -1,3 +1,6 @@
-link
-
-<button class="fluid ui basic button">当前页面添加链接</button>
+<div>
+    <button class="fluid ui basic button" ng-click="add()">当前页面添加链接</button>
+    <ul ng-repeat="link in links">
+        <li>{{link.text}} == {{link.url}}</li>
+    </ul>
+</div>
